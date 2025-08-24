@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dillomn.dev - IT & Cybersecurity Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" xintegrity="sha512-Fo3rlrZj/k7ujlZH0iF2f2xI/6hP+L7t1pL5u5e5k5g1Z5g5g5g5g5g5g5g5g5g5g5g5g5g5g5g5g5g5g5g5g5g5g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            background-color: #f8fafc; /* Slate-50 */
+        }
+        /* Custom scrollbar for a cleaner look */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #e2e8f0; /* Slate-200 */
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #94a3b8; /* Slate-400 */
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #64748b; /* Slate-500 */
+        }
+        .icon-box {
+            @apply flex items-center justify-center w-16 h-16 bg-blue-600 text-white rounded-full text-3xl mb-4 shadow-lg;
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+    <!-- Navigation Bar -->
+    <nav class="bg-white shadow-md p-4 sticky top-0 z-50 rounded-b-lg">
+        <div class="container mx-auto flex justify-between items-center flex-wrap">
+            <a href="#" class="text-2xl font-bold text-blue-700 rounded-md p-2 hover:bg-blue-50 transition-colors duration-300">dillomn.dev</a>
+            <div class="block lg:hidden">
+                <button id="nav-toggle" class="flex items-center px-3 py-2 border rounded text-blue-600 border-blue-400 hover:text-blue-800 hover:border-blue-600">
+                    <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v15z"/></svg>
+                </button>
+            </div>
+            <div class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden" id="nav-content">
+                <div class="text-sm lg:flex-grow">
+                    <a href="#about" class="block mt-4 lg:inline-block lg:mt-0 text-blue-600 hover:text-blue-800 mr-4 p-2 rounded-md hover:bg-blue-50 transition-colors duration-300">About</a>
+                    <a href="#skills" class="block mt-4 lg:inline-block lg:mt-0 text-blue-600 hover:text-blue-800 mr-4 p-2 rounded-md hover:bg-blue-50 transition-colors duration-300">Skills</a>
+                    <a href="#experience" class="block mt-4 lg:inline-block lg:mt-0 text-blue-600 hover:text-blue-800 mr-4 p-2 rounded-md hover:bg-blue-50 transition-colors duration-300">Experience</a>
+                    <a href="#projects" class="block mt-4 lg:inline-block lg:mt-0 text-blue-600 hover:text-blue-800 mr-4 p-2 rounded-md hover:bg-blue-50 transition-colors duration-300">Projects</a>
+                    <a href="#contact" class="block mt-4 lg:inline-block lg:mt-0 text-blue-600 hover:text-blue-800 p-2 rounded-md hover:bg-blue-50 transition-colors duration-300">Contact</a>
+                </div>
+                <div>
+                    <a href="#resume" class="inline-block text-sm px-4 py-2 leading-none border rounded text-white bg-blue-600 hover:bg-blue-700 border-blue-600 hover:border-transparent mt-4 lg:mt-0 transition-colors duration-300 shadow-md">View Resume</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="bg-gradient-to-br from-blue-600 to-cyan-700 text-white py-20 px-4 text-center rounded-b-lg shadow-xl relative overflow-hidden">
+        <div class="absolute inset-0 bg-pattern opacity-10"></div> <!-- Subtle background pattern -->
+        <div class="container mx-auto relative z-10 flex flex-col lg:flex-row items-center justify-center lg:justify-between space-y-8 lg:space-y-0 lg:space-x-12">
+            <div class="lg:w-1/2 text-left lg:pr-8">
+                <h1 class="text-5xl md:text-6xl font-extrabold mb-4 leading-tight animate-fade-in-down">Hello, I'm Dillon Brooks!</h1>
+                <p class="text-xl md:text-2xl mb-8 leading-relaxed animate-fade-in-up">
+                    An **IT Expert** and **Cybersecurity Student** dedicated to maintaining robust systems and securing digital environments.
+                </p>
+                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a href="#experience" class="inline-block bg-white text-blue-700 hover:bg-gray-100 font-bold py-3 px-8 rounded-full shadow-lg transition-all duration-300 transform hover:scale-105">My Experience</a>
+                    <a href="#contact" class="inline-block border border-white text-white hover:bg-white hover:text-blue-700 font-bold py-3 px-8 rounded-full shadow-lg transition-all duration-300 transform hover:scale-105">Get in Touch</a>
+                </div>
+            </div>
+            <div class="lg:w-1/2 flex justify-center lg:justify-end">
+                <img src="https://placehold.co/300x300/2563eb/ffffff?text=DB" alt="Dillon Brooks' Profile Picture" class="rounded-full w-60 h-60 md:w-80 md:h-80 object-cover border-4 border-white shadow-2xl animate-fade-in-right">
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 px-4 bg-gray-50 rounded-lg m-6 shadow-lg">
+        <div class="container mx-auto flex flex-col lg:flex-row items-center lg:space-x-12">
+            <div class="lg:w-1/2 mb-10 lg:mb-0">
+                <img src="https://placehold.co/600x400/3b82f6/ffffff?text=About+Me" alt="About Me Illustration" class="rounded-lg shadow-xl w-full h-auto object-cover transform hover:scale-102 transition-transform duration-300">
+            </div>
+            <div class="lg:w-1/2 text-center lg:text-left">
+                <h2 class="text-4xl font-bold mb-8 text-blue-700">About Me</h2>
+                <div class="text-lg leading-relaxed text-gray-700">
+                    <p class="mb-4">
+                        I'm **Dillon Brooks**, a Junior **IT Expert** at **Arterra Interactive**, with a strong passion for IT operations and a focused interest in **cybersecurity**. My professional journey has equipped me with hands-on experience in managing and troubleshooting diverse IT infrastructures, ensuring smooth operations for creative teams.
+                    </p>
+                    <p class="mb-4">
+                        At Arterra, I handle IT tickets, troubleshoot computer issues, manage Windows Server and Windows 10 environments, maintain IT and server rooms, and oversee AWS EC2 instances and the in-house render farm. I also contribute to interactive VR art, creating immersive tours for corporate and government clients.
+                    </p>
+                    <p>
+                        Currently, I'm deepening my expertise by studying cybersecurity, eager to apply my practical IT knowledge to protect systems and data. I'm always seeking new challenges and opportunities to learn and grow in the ever-evolving tech landscape.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 px-4 bg-white rounded-lg m-6 shadow-lg">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-12 text-blue-700">My Skills & Expertise</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <!-- Skill Card 1: IT Support & System Administration -->
+                <div class="bg-blue-50 p-8 rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300 flex flex-col items-center transform hover:-translate-y-2">
+                    <div class="icon-box"><i class="fas fa-desktop"></i></div>
+                    <h3 class="text-2xl font-semibold mb-4 text-blue-800">IT Support & Systems</h3>
+                    <ul class="list-disc list-inside text-left text-gray-700 space-y-2">
+                        <li>IT Ticketing & Support</li>
+                        <li>Computer Troubleshooting & Repair</li>
+                        <li>Windows Server & Windows 10 Management</li>
+                        <li>Hardware & Software Installation/Configuration</li>
+                        <li>Routine Maintenance</li>
+                    </ul>
+                </div>
+                <!-- Skill Card 2: Cloud & Infrastructure -->
+                <div class="bg-blue-50 p-8 rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300 flex flex-col items-center transform hover:-translate-y-2">
+                    <div class="icon-box"><i class="fas fa-cloud"></i></div>
+                    <h3 class="text-2xl font-semibold mb-4 text-blue-800">Cloud & Infrastructure</h3>
+                    <ul class="list-disc list-inside text-left text-gray-700 space-y-2">
+                        <li>AWS EC2 Instance Management</li>
+                        <li>Render Node Management</li>
+                        <li>AWS Cloud Render Farm Operations</li>
+                        <li>IT & Server Room Maintenance</li>
+                    </ul>
+                </div>
+                <!-- Skill Card 3: Cybersecurity & Quality Assurance -->
+                <div class="bg-blue-50 p-8 rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300 flex flex-col items-center transform hover:-translate-y-2">
+                    <div class="icon-box"><i class="fas fa-shield-alt"></i></div>
+                    <h3 class="text-2xl font-semibold mb-4 text-blue-800">Cybersecurity & QA</h3>
+                    <ul class="list-disc list-inside text-left text-gray-700 space-y-2">
+                        <li>Cybersecurity Studies</li>
+                        <li>Quality Assurance Principles</li>
+                        <li>VR Tour Creation (Pano2VR)</li>
+                        <li>System Documentation</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-20 px-4 bg-gray-50 rounded-lg m-6 shadow-lg">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-12 text-blue-700">My Professional Experience</h2>
+            <div class="relative max-w-4xl mx-auto">
+                <!-- Timeline/Divider line -->
+                <div class="absolute hidden md:block h-full border-l-2 border-blue-300 left-1/2 transform -translate-x-1/2"></div>
+
+                <!-- Experience Item 1: Arterra Interactive -->
+                <div class="mb-12 flex flex-col md:flex-row items-center md:justify-between text-left even:md:flex-row-reverse">
+                    <div class="md:w-1/2 p-4">
+                        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1">
+                            <img src="https://placehold.co/400x200/2563eb/ffffff?text=Arterra+Interactive" alt="Arterra Interactive Logo Placeholder" class="rounded-md mb-4 w-full h-32 object-cover">
+                            <h3 class="text-2xl font-semibold mb-3 text-blue-800">IT Expert + Interactive VR Artist @ Arterra Interactive</h3>
+                            <p class="text-gray-700 mb-2 font-medium">Jul 2023 - Present (2 yrs 2 mos)</p>
+                            <ul class="list-disc list-inside text-left text-gray-700 mb-4 space-y-1">
+                                <li>Managed IT tickets, troubleshooting, and computer repairs.</li>
+                                <li>Installed and configured computer systems, including Windows Server & Windows 10.</li>
+                                <li>Maintained IT and server rooms; managed AWS EC2 instances and render farms.</li>
+                                <li>Created interactive VR tours using Pano2VR for corporate and government clients.</li>
+                            </ul>
+                            <div class="flex flex-wrap gap-2 mt-4">
+                                <span class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">IT Support</span>
+                                <span class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">AWS</span>
+                                <span class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">VR</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md:w-1/2 p-4 hidden md:block">
+                        <!-- Placeholder for visual balance -->
+                    </div>
+                </div>
+
+                <!-- Experience Item 2: Thirdera - Quality Assurance Analyst -->
+                <div class="mb-12 flex flex-col md:flex-row items-center md:justify-between text-left odd:md:flex-row-reverse">
+                    <div class="md:w-1/2 p-4 hidden md:block">
+                        <!-- Placeholder for visual balance -->
+                    </div>
+                    <div class="md:w-1/2 p-4">
+                        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1">
+                            <img src="https://placehold.co/400x200/3b82f6/ffffff?text=Thirdera" alt="Thirdera Logo Placeholder" class="rounded-md mb-4 w-full h-32 object-cover">
+                            <h3 class="text-2xl font-semibold mb-3 text-blue-800">Quality Assurance Analyst @ Thirdera</h3>
+                            <p class="text-gray-700 mb-2 font-medium">Nov 2021 - Nov 2022 (1 yr 1 mo)</p>
+                            <ul class="list-disc list-inside text-left text-gray-700 mb-4 space-y-1">
+                                <li>Contributed as a Quality Assurance Analyst, writing test scripts for customers and UAT.</li>
+                                <li>Ensured customer satisfaction with the quality of releases.</li>
+                                <li>Gained experience working in Agile/SCRUM methodologies within an IT context.</li>
+                                <li>Shadowed IT professionals in project implementation.</li>
+                            </ul>
+                            <div class="flex flex-wrap gap-2 mt-4">
+                                <span class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">Quality Assurance</span>
+                                <span class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">Agile</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Additional past experience - MEGT IT Traineeship -->
+                <div class="mb-12 flex flex-col md:flex-row items-center md:justify-between text-left even:md:flex-row-reverse">
+                    <div class="md:w-1/2 p-4">
+                        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1">
+                            <img src="https://placehold.co/400x200/60a5fa/ffffff?text=MEGT" alt="MEGT Logo Placeholder" class="rounded-md mb-4 w-full h-32 object-cover">
+                            <h3 class="text-2xl font-semibold mb-3 text-blue-800">Information Technology Traineeship @ MEGT</h3>
+                            <p class="text-gray-700 mb-2 font-medium">Nov 2021 - Oct 2022 (1 yr)</p>
+                            <ul class="list-disc list-inside text-left text-gray-700 mb-4 space-y-1">
+                                <li>Completed a Certificate IV in Information Technology through MEGT.</li>
+                                <li>Gained foundational IT knowledge and practical skills in a professional setting.</li>
+                            </ul>
+                            <div class="flex flex-wrap gap-2 mt-4">
+                                <span class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">IT Training</span>
+                                <span class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">Cert IV IT</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md:w-1/2 p-4 hidden md:block">
+                        <!-- Placeholder for visual balance -->
+                    </div>
+                </div>
+
+                 <!-- Example for Blueshift -->
+                <div class="mb-12 flex flex-col md:flex-row items-center md:justify-between text-left odd:md:flex-row-reverse">
+                    <div class="md:w-1/2 p-4 hidden md:block">
+                        <!-- Placeholder for visual balance -->
+                    </div>
+                    <div class="md:w-1/2 p-4">
+                        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 px-4 bg-white rounded-lg m-6 shadow-lg">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-12 text-blue-700">My Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-5xl mx-auto">
+                <!-- Project Card 1: Cybersecurity Focused Project -->
+                <div class="bg-blue-50 p-8 rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300 flex flex-col items-center transform hover:-translate-y-2">
+                    <div class="icon-box bg-blue-700"><i class="fas fa-network-wired"></i></div>
+                    <h3 class="text-2xl font-semibold mb-4 text-blue-800">Network Security Audit Tool</h3>
+                    <p class="text-gray-700 mb-4 text-center flex-grow">
+                        A conceptual project focused on developing a basic script or tool to scan for common network vulnerabilities and misconfigurations.
+                    </p>
+                    <div class="mt-auto space-x-2">
+                        <a href="#" target="_blank" class="inline-block bg-blue-600 text-white hover:bg-blue-700 py-2 px-5 rounded-full shadow-md text-sm transition-colors duration-300">Learn More</a>
+                        <a href="#" target="_blank" class="inline-block border border-blue-600 text-blue-600 hover:bg-blue-50 py-2 px-5 rounded-full shadow-md text-sm transition-colors duration-300">GitHub</a>
+                    </div>
+                </div>
+
+                <!-- Project Card 2: IT Automation / Scripting Project -->
+                <div class="bg-blue-50 p-8 rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300 flex flex-col items-center transform hover:-translate-y-2">
+                    <div class="icon-box bg-blue-700"><i class="fas fa-robot"></i></div>
+                    <h3 class="text-2xl font-semibold mb-4 text-blue-800">System Maintenance Script Suite</h3>
+                    <p class="text-gray-700 mb-4 text-center flex-grow">
+                        A collection of scripts (e.g., PowerShell, Python) designed to automate routine system health checks, cleanup, and report generation for Windows environments.
+                    </p>
+                    <div class="mt-auto space-x-2">
+                        <a href="#" target="_blank" class="inline-block bg-blue-600 text-white hover:bg-blue-700 py-2 px-5 rounded-full shadow-md text-sm transition-colors duration-300">Learn More</a>
+                        <a href="#" target="_blank" class="inline-block border border-blue-600 text-blue-600 hover:bg-blue-50 py-2 px-5 rounded-full shadow-md text-sm transition-colors duration-300">GitHub</a>
+                    </div>
+                </div>
+
+                <!-- Project Card 3: VR / Interactive Media Project -->
+                <div class="bg-blue-50 p-8 rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300 flex flex-col items-center transform hover:-translate-y-2">
+                    <div class="icon-box bg-blue-700"><i class="fas fa-vr-cardboard"></i></div>
+                    <h3 class="text-2xl font-semibold mb-4 text-blue-800">Personal VR Tour Demo</h3>
+                    <p class="text-gray-700 mb-4 text-center flex-grow">
+                        An experimental VR tour created using Pano2VR, showcasing immersive environments and interactive elements for a personal portfolio piece.
+                    </p>
+                    <div class="mt-auto space-x-2">
+                        <a href="#" target="_blank" class="inline-block bg-blue-600 text-white hover:bg-blue-700 py-2 px-5 rounded-full shadow-md text-sm transition-colors duration-300">View Demo</a>
+                        <a href="#" target="_blank" class="inline-block border border-blue-600 text-blue-600 hover:bg-blue-50 py-2 px-5 rounded-full shadow-md text-sm transition-colors duration-300">Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-12">
+                <a href="#contact" class="inline-block bg-blue-700 text-white hover:bg-blue-800 font-bold py-3 px-8 rounded-full shadow-lg transition-all duration-300 transform hover:scale-105">More Projects Coming Soon!</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 px-4 bg-white rounded-lg m-6 shadow-lg">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-8 text-blue-700">Get in Touch</h2>
+            <p class="max-w-2xl mx-auto text-lg leading-relaxed text-gray-700 mb-10">
+                I'm always open to new opportunities in IT and cybersecurity, collaborations, and discussions. Feel free to reach out!
+            </p>
+            <div class="flex flex-col items-center space-y-6">
+                <a href="mailto:your.email@example.com" class="bg-blue-600 text-white hover:bg-blue-700 py-4 px-10 rounded-full text-xl font-semibold shadow-lg transition-all duration-300 transform hover:scale-105">Email Me</a>
+                <div class="flex space-x-6 text-gray-600 text-3xl mt-6">
+                    <a href="https://linkedin.com/in/dillon-brooks-7b2a76208" target="_blank" class="hover:text-blue-600 transition-colors duration-300" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/yourprofile" target="_blank" class="hover:text-blue-600 transition-colors duration-300" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <!-- Add more social links as needed (e.g., Twitter, Portfolio) -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8 px-4 text-center rounded-t-lg shadow-inner">
+        <div class="container mx-auto">
+            <p>&copy; 2025 Dillomn.dev. All rights reserved.</p>
+            <div class="mt-4 text-sm text-gray-400">
+                Built with ❤️ and Tailwind CSS.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+
+                // Close mobile nav after clicking a link
+                const navContent = document.getElementById('nav-content');
+                if (navContent.classList.contains('block')) {
+                    navContent.classList.remove('block');
+                    navContent.classList.add('hidden');
+                }
+            });
+        });
+
+        // Toggle mobile navigation menu
+        const navToggle = document.getElementById('nav-toggle');
+        const navContent = document.getElementById('nav-content');
+
+        navToggle.addEventListener('click', () => {
+            navContent.classList.toggle('hidden');
+            navContent.classList.toggle('block');
+        });
+    </script>
+</body>
+</html>               <img src="https://placehold.co/400x200/bfdbfe/ffffff?text=Blueshift" alt="Blueshift Logo Placeholder" class="rounded-md mb-4 w-full h-32 object-cover">
+                            <h3 class="text-2xl font-semibold mb-3 text-blue-800">Work Experience (IDT) @ Blueshift (Internship)</h3>
+                            <p class="text-gray-700 mb-2 font-medium">May 2019 (1 mo)</p>
+                            <ul class="list-disc list-inside text-left text-gray-700 mb-4 space-y-1">
+                                <li>Attended standup meetings and shadowed IT professionals.</li>
+                                <li>Introduced to software companies and performed data entry and QA tasks.</li>
+                                <li>Part of Certificate III Information, Digital Media and Technology (IDT) course.</li>
+                            </ul>
+                            <div class="flex flex-wrap gap-2 mt-4">
+                                <span class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">Internship</span>
+                                <span class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">QA</span>
+                            </div>
+                        </div>
+             
+  
